@@ -1,4 +1,5 @@
 var config = {
+
    entry: './main.js',
    
    output: {
@@ -7,6 +8,7 @@ var config = {
    },
    
    devServer: {
+      host: "54.234.23.64",
       inline: true,
       port: 8000
    },
