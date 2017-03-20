@@ -13,7 +13,6 @@ var App = React.createClass({
             <div>
             	<Header />
             	<MainContainer />
-            	<Footer />
             </div>
         )
     }

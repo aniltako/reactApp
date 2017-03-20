@@ -19,6 +19,35 @@ var SideBar = React.createClass({
 		this.props.onDistanceChange(distance);
 	},
 
+	handleChangeSite: function(e){
+		// var checkedStatus = [];
+		// var checkedIndeed;
+		// var checkedZipRecruiter;
+		// var checkedJob2Careers;
+
+		// if(e.target.checked){
+		// 	checkedIndeed = false;
+		// }else{
+		// 	checkedIndeed = true;
+		// }
+
+		// if(this.props.checked[1]){
+		// 	checkedZipRecruiter = false;
+		// }else{
+		// 	checkedZipRecruiter = true;
+		// }
+
+		// if(this.props.checked[2]){
+		// 	checkedJob2Careers = false;
+		// }else{
+		// 	checkedJob2Careers = true;
+		// }
+
+		// checkedStatus = [checkedIndeed, checkedZipRecruiter, checkedJob2Careers];
+
+		// this.props.onChangeSite(checkedStatus);
+	},
+
 	render: function(){
 
 		return (
@@ -33,13 +62,25 @@ var SideBar = React.createClass({
 
 					<div className="checkbox">
 					    <label>
-					        <input type="checkbox" /> Indeed
+					        <input type="checkbox" 
+					        		data-key='0'
+					        		checked={this.props.checked[0]} 
+					        		onChange={this.handleChangeSite}/> 
+					        	Indeed
 					    </label>
 					    <label>
-					        <input type="checkbox" /> ZipRecruiter
+					        <input type="checkbox" 
+					        		data-key='1'
+					        		checked={this.props.checked[1]} 
+					        		onChange={this.handleChangeSite}/> 
+					        	ZipRecruiter
 					    </label>
 					    <label>
-					        <input type="checkbox" /> Jobs2Careers
+					        <input type="checkbox"
+					        		data-key='2'
+					        		checked={this.props.checked[2]} 
+					        		onChange={this.handleChangeSite}/>  
+					        	Jobs2Careers
 					    </label>
 					</div>
 

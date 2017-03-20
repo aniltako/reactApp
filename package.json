@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --hot",
-    "dev": "webpack-dev-server --progress --colors"
+    "dev": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.15.3",
+    "jquery": "^3.2.0",
+    "node-fetch": "^1.6.3",
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-addons-transition-group": "^15.4.2",

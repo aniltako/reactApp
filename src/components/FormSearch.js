@@ -40,7 +40,7 @@ var FormSearch = React.createClass({
 					            </div>
 
 				                <div className="form-group col-sm-2">
-				                    <button onClick={this.handleSubmit} type="submit" id="search_selected" className="btn btn-primary btn-findJobs">Search</button> 
+				                    <button onClick={this.handleSubmit} type="button" id="search_selected" className="btn btn-primary btn-findJobs">Search</button> 
 				                </div> 
 				                             
 				              </form>    
